@@ -355,17 +355,19 @@ background: var(--studio-color);
   align-items: center;
 }
 
-.svg-link {
+/* .svg-link {
   padding: 12px;
-}
+} */
 
 .svg-item {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 12px;
 }
 
-.svg-link:hover, .svg-link:focus {
+.svg-item:hover,
+ .svg-item:focus {
   border-radius: 50%;
   background-color: var(--web-color);
   .icon-comand {
@@ -630,13 +632,10 @@ outline: none;
 
 .modal-box {
 position: relative;
-}
-
-.modal-box:hover, .modal-box:focus {
-  .modal-inp {
+.modal-inp:hover, .modal-inp:focus {
     border: 1px solid var(--web-color);
   }
-  .model-svg {
+  .model-svg:hover, .modal-inp:focus {
     fill: var(--web-color);
   }
 }
@@ -673,7 +672,6 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.7;
 letter-spacing: 0.42px;
-width: 400px;
 }
 
 .check-link {
@@ -683,6 +681,7 @@ font-weight: 400;
 line-height: 1.7;
 letter-spacing: 0.42px;
 text-decoration-line: underline;
+margin-left: 2px;
 }
 
 .check-btn {
