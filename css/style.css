@@ -632,13 +632,17 @@ outline: none;
 
 .modal-box {
 position: relative;
-.modal-inp:hover, .modal-inp:focus {
-    border: 1px solid var(--web-color);
+}
+
+ .modal-box:hover, .modal-box:focus {
+  .modal-inp{
+    border-color: var(--web-color);
   }
-  .model-svg:hover, .modal-inp:focus {
+  .model-svg {
     fill: var(--web-color);
   }
-}
+
+ }
 
 .model-svg {
   width: 18px;
