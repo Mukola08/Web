@@ -464,7 +464,8 @@ border: 1px solid var(--svg-color);
 }
 
 .customers-link:hover, .customers-link:focus {
-  border-color: var(--web-color);
+  outline: 1px solid var(--web-color);
+  border: none;
 transition-property: border-color ;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
