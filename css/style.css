@@ -394,10 +394,6 @@ background: var(--studio-color);
   align-items: center;
 }
 
-/* .svg-link {
-  padding: 12px;
-} */
-
 .svg-item {
   display: flex;
   align-items: center;
@@ -407,6 +403,7 @@ background: var(--studio-color);
 
 .svg-item:hover,
  .svg-item:focus {
+  outline: var(--web-color);
   border-radius: 50%;
   background-color: var(--web-color);
   transition-property: background-color ;
@@ -585,6 +582,7 @@ margin-bottom: 20px;
 }
 
 .foot-item:hover, .foot-item:focus {
+  outline: var(--web-color);
   background-color: var(--web-color);
   transition-property: background-color ;
   transition-duration: 250ms;
@@ -701,6 +699,7 @@ transform: translate(-50%, -50%);
 }
 
 .model-btn:hover, .model-btn:focus {
+outline: var(--border-color);
   .btn-svg {
     fill: var(--web-color);
     transition-property: fill ;
