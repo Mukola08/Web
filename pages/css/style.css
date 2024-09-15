@@ -135,7 +135,6 @@ button {
 }
 
 .current:hover::after, .current:focus::after {
-  display: block;
   content: "";
   width: 100%;
 height: 4px;

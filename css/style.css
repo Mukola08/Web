@@ -122,9 +122,6 @@ body {
   color: var(--web-color);
 }
 
-.current:hover, .current:focus {
-}
-
 .current:hover:after, .current:focus:after {
   content: "";
   width: 100%;
