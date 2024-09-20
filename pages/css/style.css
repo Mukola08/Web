@@ -239,7 +239,6 @@ left: 0px;
 
 .photo-link {
   flex-basis: calc((100% - 60px) / 3);
-  position: relative;
 }
 
 .photo-link:hover,
@@ -253,10 +252,23 @@ left: 0px;
     .overlay {
       opacity: 1;
        transition-property: opacity;
-  transition-duration: 250ms;
+  transition-duration: 2s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
     }
+}
+
+.icon-bax {
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-bax:hover .overlay {
+   opacity: 1;
+ transform: translate(0);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-delay: 0;
 }
 
 .photo-img {
@@ -272,10 +284,12 @@ height: 294px;
 padding: 63px 24px;
 background: rgba(33, 150, 243, 0.90);
 opacity: 0;
-transition-property: background-color;
-  transition-duration: 250ms;
+transition-property: background-color transform;
+  transition-duration: 2s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
+  transform: translatey(370px);
+  overflow: hidden;
 }
 
 .over-text {
