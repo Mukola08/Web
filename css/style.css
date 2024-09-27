@@ -413,8 +413,22 @@ background: var(--studio-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
+     animation-name: move-box;
+animation-duration: 250ms;
+animation-iteration-count: initial ;
   }
 }
+
+@keyframes move-box {
+    0% {
+    transform: rotate(0);
+    }
+
+
+    100%{
+    transform: rotate(360deg);
+    }
+  }
 
 .icon-comand {
   width: 20px;
@@ -435,6 +449,7 @@ background: var(--studio-color);
   justify-content: center;
   align-items: center;
   gap: 30px;
+  position: relative;
 }
 
 .customers-title {
@@ -585,7 +600,23 @@ margin-bottom: 20px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
+  .foot-icon {
+      animation-name: move-box;
+animation-duration: 250ms;
+animation-iteration-count: initial ;
+  }
 }
+
+@keyframes move-box {
+    0% {
+    transform: rotate(0);
+    }
+
+
+    100%{
+    transform: rotate(360deg);
+    }
+  }
 
 .foot-icon {
   fill: var(--affairs-color);
