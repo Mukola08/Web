@@ -78,18 +78,18 @@
     .comand__icon {
       fill: $affairs-color;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      animation: move-box 250ms initial;
+      animation: move-box 250ms ease;
     }
   }
 }
 
 @keyframes move-box {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+0% {
+transform: rotate(0);
+}
+100% {
+transform: rotate(360deg);
+}
 }
 
 &__icon {
@@ -98,4 +98,6 @@
   fill: $svg-color;
 }
 }
+
+
 
