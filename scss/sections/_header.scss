@@ -26,19 +26,8 @@
     display: flex;
     gap: 30px;
   }
-
-  &__icon {
-    width: 10px;
-    height: 16px;
-    fill: $accent-color;
-
-    &.head__svg {
-      width: 16px;
-      height: 12px;
-    }
-  }
-
-  &__item {
+  
+  &__link {
     color: $accent-color;
     font-size: 14px;
     font-weight: 500;
@@ -69,6 +58,18 @@
       }
     }
   }
+
+  &__icon {
+    width: 10px;
+    height: 16px;
+    fill: $accent-color;
+
+    &.head__svg {
+      width: 16px;
+      height: 12px;
+    }
+  }
+
 }
 
 .box {
@@ -83,11 +84,11 @@
     margin-right: 318px;
   }
 
-  &__link {
+  &__item {
     position: relative;
   }
 
-  &__item {
+  &__link {
     color: $text-color;
     font-size: 14px;
     font-weight: 500;
