@@ -28,9 +28,7 @@
         &__box {
             width: 370px;
             height: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-box($c: flex-start, $d: flex-start);
             background: rgba(47, 48, 58, 0.80);
             position: absolute;
             bottom: 0;

@@ -56,16 +56,12 @@
   }
 
   &__leest {
-  display: flex;
+  @include flex-box($c: flex-start, $d: flex-start);
   gap: 10px;
-  justify-content: center;
-  align-items: center;
 }
 
 &__eatem {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@include flex-box($c: flex-start, $d: flex-start);
   padding: 12px;
 
   &:hover,

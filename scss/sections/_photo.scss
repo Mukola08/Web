@@ -5,9 +5,8 @@
   border-top: 1px solid $header-color;
 
   &__leest {
-    display: flex;
+    @include flex-box($a: flex-start, $c: flex-start, $d: flex-start);
     gap: 8px;
-    justify-content: center;
     margin-bottom: 50px;
   }
 
@@ -40,8 +39,7 @@
 
   
   &__list {
-    display: flex;
-    flex-wrap: wrap;
+   @include flex-box($a: flex-start, $b: flex-start, $d: flex-start);
     gap: 30px;
   }
 

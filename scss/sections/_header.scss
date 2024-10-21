@@ -33,8 +33,7 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
-    display: flex;
-    align-items: center;
+    @include flex-box($b: flex-start, $c: flex-start, $d: flex-start);
     gap: 10px;
 
     &:last-child {
@@ -73,8 +72,7 @@
 }
 
 .box {
-  display: flex;
-  align-items: center;
+@include flex-box($b: flex-start, $c: flex-start, $d: flex-start);
 }
 
 .nav {

@@ -25,9 +25,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   &__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-box($c: flex-start, $d: flex-start);
     border-radius: 50%;
     background-color: transparent;
     padding: 6px;
@@ -141,9 +139,7 @@
   }
 
   .check {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-box($c: flex-start, $d: flex-start);
     margin-bottom: 34px;
     color: $accent-color;
     font-size: 14px;

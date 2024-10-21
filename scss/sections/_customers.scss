@@ -3,9 +3,7 @@
     padding-bottom: 94px;
 
     &__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-box($c: flex-start, $d: flex-start);
     gap: 30px;
     position: relative;
 }
@@ -21,9 +19,7 @@
 }
 
 &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   @include flex-box($c: flex-start, $d: flex-start);
     width: 170px;
     height: 92px;
     border-radius: 4px;
