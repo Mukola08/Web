@@ -1,51 +1,94 @@
 .advantages {
-    background-color: $affairs-color;
+  background-color: $affairs-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
+    padding-bottom: 0;
+  }
 
-    &__list {
-            display: flex;
-            gap: 30px;
-    
-        }
-    
-        &__item::before {
-            content: "";
-            border-radius: 4px;
-            background: $comand-color;
-            width: 270px;
-            height: 120px;
-            display: block;
-            background-image: url(../images/antenna.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            margin-bottom: 30px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
-            &:nth-child(2)::before {
-                background-image: url(../images/clock.png);
-            }
-            
-            &:nth-child(3)::before {
-                background-image: url(../images/diagram.png);
-            }
-        
-            &:nth-child(4)::before {
-                background-image: url(../images/astronaut.png);
-            }
-        }
-    
-    
-    
-        &__title {
-            color: $text-color;
-            @extend %accent;
-            margin-bottom: 10px;
-        }
-    
-        &__text {
-            color: $accent-color;
-           @extend %foot;
-            width: 270px;
-        }
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
 
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
+  }
+
+  &__item::before {
+    content: "";
+    border-radius: 4px;
+    background: $comand-color;
+    width: 450px;
+    height: 120px;
+    display: block;
+    background-image: url(../images/antenna.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 120px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 120px;
+    }
+
+    &:nth-child(2)::before {
+      background-image: url(../images/clock.png);
+    }
+
+    &:nth-child(3)::before {
+      background-image: url(../images/diagram.png);
+    }
+
+    &:nth-child(4)::before {
+      background-image: url(../images/astronaut.png);
+    }
+  }
+
+  &__title {
+    color: $text-color;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
+  }
+
+  &__text {
+    color: $accent-color;
+    @extend %foot;
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
 }
-

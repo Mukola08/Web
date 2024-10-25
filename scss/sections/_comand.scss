@@ -1,13 +1,28 @@
 .comand {
   background-color: $comand-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
+
+      @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
     max-width: 1200px;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+      @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
   }
 
   &__item {
@@ -21,13 +36,31 @@
   &__box {
     border-radius: 0px 0px 4px 4px;
     background: $studio-color;
-    width: 270px;
+    width: 450px;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 36px;
+
+         @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        padding-top: 28px;
+        padding-bottom: 42px;
+    }
   }
 
   &__img {
-    width: 270px;
+    width: 450px;
+
+      @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
   }
 
   &__title {
