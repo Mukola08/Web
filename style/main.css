@@ -274,8 +274,11 @@ button {
   padding-bottom: 118px;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fons.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -294,11 +297,12 @@ button {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
-    line-height: 1.36; /* 136.364% */
+    line-height: 1.36;
     letter-spacing: 2.64px;
     width: 696px;
   }
