@@ -85,7 +85,7 @@ button {
   text-transform: uppercase;
 }
 
-.modal .check__link, .footer__item, .footer__maps, .advantages__text {
+.footer__item, .footer__maps, .advantages__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -982,9 +982,14 @@ button {
   letter-spacing: 0.6px;
   text-align: center;
   margin-bottom: 12px;
-  width: 370px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .modal__title {
+    width: 370px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal__title {
@@ -1105,6 +1110,10 @@ button {
 }
 .modal .check__link {
   color: #2196f3;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.36px;
   text-decoration-line: underline;
   margin-left: 3px;
 }
