@@ -373,6 +373,15 @@ button {
   background-position: center;
   margin-bottom: 30px;
 }
+.advantages__item::before:nth-child(2)::before {
+  background-image: url(../images/clock.png);
+}
+.advantages__item::before:nth-child(3)::before {
+  background-image: url(../images/diagram.png);
+}
+.advantages__item::before:last-child::before {
+  background-image: url(../images/astronaut.png);
+}
 @media screen and (min-width: 480px) {
   .advantages__item::before {
     width: 450px;
@@ -387,15 +396,6 @@ button {
   .advantages__item::before {
     width: 270px;
   }
-}
-.advantages__item:nth-child(2)::before {
-  background-image: url(../images/clock.png);
-}
-.advantages__item:nth-child(3)::before {
-  background-image: url(../images/diagram.png);
-}
-.advantages__item:last-child::before {
-  background-image: url(../images/astronaut.png);
 }
 .advantages__title {
   color: #212121;

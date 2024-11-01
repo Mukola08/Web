@@ -34,6 +34,18 @@
     background-position: center;
     margin-bottom: 30px;
 
+     &:nth-child(2)::before {
+      background-image: url(../images/clock.png);
+    }
+
+    &:nth-child(3)::before {
+      background-image: url(../images/diagram.png);
+    }
+
+    &:last-child::before {
+      background-image: url(../images/astronaut.png);
+    }
+
     @media screen and (min-width: 480px) {
       width: 450px;
     }
@@ -47,17 +59,7 @@
     }
   }
 
-  &__item:nth-child(2)::before {
-      background-image: url(../images/clock.png);
-    }
-
-    &__item:nth-child(3)::before {
-      background-image: url(../images/diagram.png);
-    }
-
-    &__item:last-child::before {
-      background-image: url(../images/astronaut.png);
-    }
+ 
 
   &__title {
     color: $text-color;
