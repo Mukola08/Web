@@ -24,10 +24,14 @@
     line-height: 1.61;
     letter-spacing: 1.56px;
     text-transform: uppercase;
-    width: 360px;
+    width: 100%;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+
+     @media screen and (min-width: 480px) {
+      width: 360px;
+    }
 
     @media screen and (min-width: 1200px) {
       font-size: 44px;
