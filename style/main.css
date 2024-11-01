@@ -385,13 +385,13 @@ button {
   }
 }
 .advantages__item::before:nth-child(2)::before {
-  background-image: url(../images/clock.png);
+  background-image: url(../../images/clock.png);
 }
 .advantages__item::before:nth-child(3)::before {
-  background-image: url(../images/diagram.png);
+  background-image: url(../../images/diagram.png);
 }
 .advantages__item::before:nth-child(4)::before {
-  background-image: url(../images/astronaut.png);
+  background-image: url(../../images/astronaut.png);
 }
 .advantages__title {
   color: #212121;
@@ -850,7 +850,7 @@ button {
   height: 50px;
   margin-top: 36px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
   .footer__btn {
     width: 200px;
     margin-right: auto;
