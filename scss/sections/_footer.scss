@@ -14,16 +14,19 @@
   padding-bottom: 60px; 
 
   &__box {
-    @include flex-box($b: flex-start, $c: flex-start);
+    display: flex;
+    flex-direction: column;
 
 @media screen and (min-width: 1200px) {
   flex-direction: row;
+  text-align: start;
 }
   }
 
   .adapt {
 display: flex;
 flex-direction: column;
+justify-content: center;
 gap: 60px;
 @media screen and (min-width: 768px) {
   flex-direction: row;
@@ -31,15 +34,19 @@ gap: 60px;
     }
 
 @media screen and (min-width: 1200px) {
+  justify-content: start;
   gap: 93px;
+  margin-right: auto;
 }
   }
 
   .drop {
     margin-right: auto;
+    margin-left: auto;
     text-align: center;
 @media screen and (min-width: 1200px) {
   text-align: start;
+  margin-left: 0;
 }
   }
 
@@ -94,10 +101,8 @@ font-size: 26px;
   }
 
   .foot {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
     text-align: center;
     @media screen and (min-width: 768px) {
   padding-top: 5px;
@@ -105,11 +110,7 @@ font-size: 26px;
     
 @media screen and (min-width: 1200px) {
   text-align: start;
-  padding-top: 12px;
-    margin-bottom: 60px;
-    margin-top: 60px;
-    padding-bottom: 40px;
-    padding-top: 0;
+    padding-top: 12px;;
 }
 
     &__title {
@@ -161,8 +162,6 @@ font-size: 26px;
 
   &__form {
     display: flex;
-    width: 100%;
-    gap: 20px;
     margin-left: 0;;
     padding-bottom: 0;;
     flex-direction: column;
@@ -174,10 +173,8 @@ font-size: 26px;
     }
 @media screen and (min-width: 1200px) {
   flex-direction: row;
-  margin-left: 93px;
-  padding-bottom: 19px;
+  padding-bottom: 30px;
   margin-top: 0;
-  gap: 12px;
 }
     }
 
@@ -205,6 +202,9 @@ font-size: 26px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     outline: none;
     margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
     @media screen and (min-width: 480px) {
       width: 450px;
     }
@@ -227,10 +227,12 @@ font-size: 26px;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 @media screen and (min-width: 1200px) {
   margin-top: 36px;
   margin-right: 0;
-  margin-left: 0;
+  margin-left: 20px;
+
 }
   }
 

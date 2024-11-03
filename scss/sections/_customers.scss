@@ -11,6 +11,7 @@ padding-bottom: 94px;
     @include flex-box($d: flex-start);
     gap: 30px;
     position: relative;
+    flex-wrap: wrap;
 }
 
 &__item {
