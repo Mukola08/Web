@@ -692,12 +692,14 @@ button {
   .footer__box {
     flex-direction: row;
     text-align: start;
+    align-items: baseline;
   }
 }
 .footer .adapt {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: baseline;
   gap: 60px;
 }
 @media screen and (min-width: 768px) {
@@ -718,10 +720,17 @@ button {
   margin-left: auto;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .footer .drop {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer .drop {
     text-align: start;
     margin-left: 0;
+    margin-right: auto;
   }
 }
 .footer__logo {
@@ -774,13 +783,13 @@ button {
 }
 @media screen and (min-width: 768px) {
   .footer .foot {
-    padding-top: 5px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer .foot {
     text-align: start;
-    padding-top: 12px;
   }
 }
 .footer .foot__title {
@@ -827,15 +836,12 @@ button {
 }
 .footer__form {
   display: flex;
-  margin-left: 0;
-  padding-bottom: 0;
   flex-direction: column;
   margin-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer__form {
     flex-direction: row;
-    padding-bottom: 30px;
     margin-top: 0;
   }
 }
@@ -894,9 +900,9 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .footer__btn {
-    margin-top: 36px;
     margin-right: 0;
     margin-left: 20px;
+    margin-top: auto;
   }
 }
 .footer__icon {

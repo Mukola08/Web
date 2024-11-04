@@ -16,10 +16,12 @@
   &__box {
     display: flex;
     flex-direction: column;
+   
 
 @media screen and (min-width: 1200px) {
   flex-direction: row;
   text-align: start;
+   align-items: baseline;
 }
   }
 
@@ -27,6 +29,7 @@
 display: flex;
 flex-direction: column;
 justify-content: center;
+align-items: baseline;
 gap: 60px;
 @media screen and (min-width: 768px) {
   flex-direction: row;
@@ -44,9 +47,14 @@ gap: 60px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+ @media screen and (min-width: 768px) {
+  margin-left: 0;
+  margin-right: 0;
+    }   
 @media screen and (min-width: 1200px) {
   text-align: start;
   margin-left: 0;
+  margin-right: auto;
 }
   }
 
@@ -105,12 +113,13 @@ font-size: 26px;
   margin-left: auto;
     text-align: center;
     @media screen and (min-width: 768px) {
-  padding-top: 5px;
+      margin-right: 0;
+      margin-left: 0;
     }
     
 @media screen and (min-width: 1200px) {
   text-align: start;
-    padding-top: 12px;;
+  
 }
 
     &__title {
@@ -162,8 +171,6 @@ font-size: 26px;
 
   &__form {
     display: flex;
-    margin-left: 0;;
-    padding-bottom: 0;;
     flex-direction: column;
     margin-top: 60px;
     @media screen and (min-width: 480px) {
@@ -173,7 +180,6 @@ font-size: 26px;
     }
 @media screen and (min-width: 1200px) {
   flex-direction: row;
-  padding-bottom: 30px;
   margin-top: 0;
 }
     }
@@ -229,10 +235,9 @@ font-size: 26px;
     margin-right: auto;
     margin-top: 20px;
 @media screen and (min-width: 1200px) {
-  margin-top: 36px;
   margin-right: 0;
   margin-left: 20px;
-
+  margin-top: auto;
 }
   }
 
