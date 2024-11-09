@@ -304,7 +304,9 @@ button {
   background: #fff;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
   opacity: 1;
-  padding: 48px 83px 48px 40px;
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-bottom: 48px;
 }
 
 .is-hidden {
@@ -332,14 +334,15 @@ button {
 .menu__list {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 32px;
+  margin-bottom: 188px;
 }
 
 .menu__link {
   color: #212121;
   font-size: 40px;
   font-weight: 500;
-  line-height: normal;
+  line-height: 1.17;
   letter-spacing: 0.8px;
 }
 .menu__link:hover {
@@ -354,23 +357,27 @@ button {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-top: 302px;
-  margin-bottom: 64px;
+}
+
+.menu__lienk {
+  color: #2196f3;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.68px;
 }
 
 .menu__leenk {
   color: #757575;
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 1.16;
   letter-spacing: 0.68px;
 }
-.menu__leenk:hover {
-  color: #2196f3;
-}
 
 .menu__least {
   display: flex;
+  margin-top: 64px;
 }
 
 .menu__leank {
