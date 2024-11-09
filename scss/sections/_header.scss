@@ -184,3 +184,115 @@
     transition-delay: 0;
   }
 }
+
+// _____menu_____
+.header__btn{
+  background: none;
+  border: transparent;
+  margin-left: auto;
+  @media screen and (min-width: 768px)  {
+    display: none;
+  }
+
+}
+.header__eacon{
+  width: 40px ;
+  height: 40px;
+  fill: $studio1-color;
+}
+.menu{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: $studio-color;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+  opacity: 1;
+ padding: 48px 83px 48px 40px;
+}
+.is-hidden{
+  pointer-events: none;
+  opacity: 0;
+  
+}
+.menu__btn{
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.menu__icon{
+  width: 40px;
+  height: 40px;
+}
+
+.menu__icon:hover {
+  fill: $web-color;
+}
+
+.menu__list{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.menu__link{
+  color: $text-color;
+font-size: 40px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.8px;
+
+&:hover {
+  color: $web-color;
+}
+}
+
+.activ {
+  color: $web-color;
+}
+
+.menu__leest {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 302px;
+  margin-bottom: 64px;
+}
+
+.menu__leenk {
+  color: $accent-color;
+font-size: 34px;
+font-weight: 500;
+line-height: 1.16;
+letter-spacing: 0.68px;
+
+&:hover {
+  color: $web-color;
+}
+}
+
+.menu__least {
+  display: flex;
+}
+
+.menu__leank {
+  color: $web-color;
+font-size: 18px;
+font-weight: 500;
+line-height: 1.2; 
+letter-spacing: 0.36px;
+border-right: 1px solid $menu-color;
+padding-right: 10px;
+padding-left: 10px;
+}
+
+.first {
+  padding-left: 0;
+}
+
+.last{
+  padding-right: 0;
+  border: none;
+}
