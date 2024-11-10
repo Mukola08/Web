@@ -335,7 +335,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 188px;
 }
 
 .menu__link {
@@ -357,6 +356,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin-top: auto;
 }
 
 .menu__lienk {

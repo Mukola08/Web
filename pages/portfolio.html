@@ -14,18 +14,23 @@
     <link rel="stylesheet" href="../style/main.min.css" />
   </head>
   <body>
-       <header class="header">
+         <header class="header">
       <div class="container box">
         <a class="header__logo" href="/index.html"
           ><span class="header__web">Web</span>Studio</a
         >
+            <button type="button" class="header__btn" modal-header-open>
+        <svg class="header__eacon">
+        <use href="../images/symbol-defs.svg#icon-menu"></use>
+        </svg>
+        </button>
         <nav class="header__nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="../index.html">Студія</a>
+              <a class="nav__link current " href="../index.html">Студія</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link current" href="../pages/portfolio.html">Портфоліо</a>
+              <a class="nav__link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">Контакти</a>
@@ -50,6 +55,28 @@
             >
           </li>
         </ul>
+         <div class="menu is-hidden" header-modal>
+          <button type="button" class="menu__btn" modal-header-close><svg class="menu__icon">
+            <use href="../images/symbol-defs.svg#icon-dagger"></use>
+          </svg></button>
+          <nav class="menu-nav">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="../index.html" class="menu__link activ">Студія</a></li>
+            <li class="menu__item"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+          </ul>
+          </nav>
+          <ul class="menu__leest">
+            <li class="menu__eetem"><a href="tel:+380961111111" class="menu__lienk">+38 096 111 11 11</a></li>
+            <li class="menu__eetem"><a href="mailto:info@devstudio.com" class="menu__leenk">info@devstudio.com</a></li>
+          </ul>
+          <ul class="menu__least">
+            <li class="menu__eatem"><a href="https://www.instagram.com/" class="menu__leank first">Instagram</a></li>
+            <li class="menu__eatem"><a href="https://twitter.com/?lang=uk" class="menu__leank">Twitter</a></li>
+            <li class="menu__eatem"><a href="https://www.facebook.com/?locale=uk_UA" class="menu__leank">Facebook</a></li>
+            <li class="menu__eatem"><a href="https://ua.linkedin.com/" class="menu__leank last">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
   <main class="main">
@@ -297,6 +324,7 @@
         </div>
       </div>
     </footer>
+     <script src="../js/modal-header.js"></script>
   </body>
 </html>
 
