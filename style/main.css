@@ -1199,6 +1199,8 @@ button {
   width: 16px;
   height: 16px;
   margin-right: 8px;
+  display: flex;
+  align-items: center;
 }
 .modal .check {
   display: flex;
@@ -1206,11 +1208,6 @@ button {
   justify-content: center;
   flex-direction: flex-start;
   margin-bottom: 30px;
-}
-@media screen and (min-width: 1200px) {
-  .modal .check {
-    margin-bottom: 34px;
-  }
 }
 .modal .check__text {
   color: #757575;
@@ -1220,6 +1217,11 @@ button {
   letter-spacing: 0.36px;
   display: flex;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .modal .check__text {
+    align-items: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal .check__text {
